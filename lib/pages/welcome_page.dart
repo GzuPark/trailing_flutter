@@ -57,6 +57,20 @@ class _WelcomePageState extends State<WelcomePage> {
                       ResponsiveButton(width: 120),
                     ],
                   ),
+                  Column(
+                    // Slide dots on the top-right
+                    children: List.generate(3, (indexDots) {
+                      return Container(
+                        margin: const EdgeInsets.only(bottom: 4),
+                        width: 8,
+                        height: index == indexDots ? 25 : 8,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          color: index == indexDots ? AppColors.mainColor : AppColors.mainColor.withOpacity(0.5),
+                        ),
+                      );
+                    }),
+                  ),
                 ],
               ),
             ),
