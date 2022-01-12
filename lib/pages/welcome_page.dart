@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:trailing_flutter/misc/colors.dart';
 import 'package:trailing_flutter/widgets/app_large_text.dart';
 import 'package:trailing_flutter/widgets/app_text.dart';
+import 'package:trailing_flutter/widgets/responsive_button.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({Key? key}) : super(key: key);
@@ -36,6 +37,7 @@ class _WelcomePageState extends State<WelcomePage> {
             child: Container(
               margin: const EdgeInsets.only(top: 150, left: 20, right: 20),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -51,6 +53,8 @@ class _WelcomePageState extends State<WelcomePage> {
                           size: 14,
                         ),
                       ),
+                      const SizedBox(height: 40),
+                      ResponsiveButton(width: 120),
                     ],
                   ),
                 ],
