@@ -134,6 +134,7 @@ class _DetailPageState extends State<DetailPage> {
                 ),
               ),
             ),
+            // bottom app buttons
             Positioned(
               bottom: 20,
               left: 20,
