@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                 // text - discover
                 Container(
                   margin: const EdgeInsets.only(left: 20),
-                  child: AppLargeText(text: 'Discover'),
+                  child: const AppLargeText(text: 'Discover'),
                 ),
                 const SizedBox(height: 20),
                 // TabBar
@@ -117,7 +117,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                   margin: const EdgeInsets.only(left: 20, right: 20),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
+                    children: const [
                       AppLargeText(text: 'Explore more', size: 22),
                       AppText(text: 'See all', color: AppColors.textColor1),
                     ],

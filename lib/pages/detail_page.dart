@@ -108,7 +108,7 @@ class _DetailPageState extends State<DetailPage> {
                       const SizedBox(height: 25),
                       AppLargeText(text: 'People', size: 20, color: Colors.black.withOpacity(0.8)),
                       const SizedBox(height: 5),
-                      AppText(text: 'Number of people in your group', color: AppColors.mainTextColor),
+                      const AppText(text: 'Number of people in your group', color: AppColors.mainTextColor),
                       const SizedBox(height: 10),
                       // button - number of people
                       Wrap(

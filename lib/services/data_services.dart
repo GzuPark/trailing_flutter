@@ -16,7 +16,6 @@ class DataServices {
         return <DataModel>[];
       }
     } catch (e) {
-      print(e);
       return <DataModel>[];
     }
   }

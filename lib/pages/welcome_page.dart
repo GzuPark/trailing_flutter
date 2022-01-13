@@ -44,10 +44,10 @@ class _WelcomePageState extends State<WelcomePage> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      AppLargeText(text: 'Trips'),
-                      AppText(text: 'Mountain', size: 30),
+                      const AppLargeText(text: 'Trips'),
+                      const AppText(text: 'Mountain', size: 30),
                       const SizedBox(height: 20),
-                      SizedBox(
+                      const SizedBox(
                         width: 250,
                         child: AppText(
                           text: 'Mountain hikes give you an incredible sense of freedom along with endurance test',
