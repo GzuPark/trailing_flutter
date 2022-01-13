@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trailing_flutter/pages/navpages/bar_item_page.dart';
-import 'package:trailing_flutter/pages/navpages/home_page.dart';
+import 'package:trailing_flutter/pages/home_page.dart';
 import 'package:trailing_flutter/pages/navpages/my_page.dart';
 import 'package:trailing_flutter/pages/navpages/search_page.dart';
 
@@ -12,7 +12,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  List pages = [
+  List pages = const [
     HomePage(),
     BarItemPage(),
     SearchPage(),
@@ -45,10 +45,10 @@ class _MainPageState extends State<MainPage> {
         unselectedFontSize: 0,
         elevation: 0, // hide navigator section bar line
         items: const [
-          BottomNavigationBarItem(title: Text('Home'), icon: Icon(Icons.apps)),
-          BottomNavigationBarItem(title: Text('Bar'), icon: Icon(Icons.bar_chart_sharp)),
-          BottomNavigationBarItem(title: Text('Search'), icon: Icon(Icons.search)),
-          BottomNavigationBarItem(title: Text('My'), icon: Icon(Icons.person)),
+          BottomNavigationBarItem(label: 'Home', icon: Icon(Icons.apps)),
+          BottomNavigationBarItem(label: 'Bar', icon: Icon(Icons.bar_chart_sharp)),
+          BottomNavigationBarItem(label: 'Search', icon: Icon(Icons.search)),
+          BottomNavigationBarItem(label: 'My', icon: Icon(Icons.person)),
         ],
       ),
     );
